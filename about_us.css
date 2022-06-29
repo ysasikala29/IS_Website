@@ -1,0 +1,132 @@
+.background {
+    background-color: lightgoldenrodyellow;
+   }
+   
+   
+   #about_us {
+     display: flex;
+     flex-direction: column;
+     height: 615px;
+     justify-content: center;
+     align-items: center;
+   }
+ 
+   #about_us::before {
+     content: "";
+     background: url(Pictures/about_us.jpg) no-repeat center center/cover;
+     padding: 0px;
+     position: absolute;
+     top: 0px;
+     left: 0px;
+     height:90%;
+     width: 100%;
+     z-index: -1;
+     opacity: 0.95;
+   }
+ 
+   #about_us h1 {
+     color: white;
+     text-shadow: 2px 2px white;
+     text-align: center;
+     font-family: "Bree Serif", serif;
+     font-size: 6.5rem;
+   }
+   
+   #about_us p {
+     color: white;
+     text-align: center;
+     text-shadow: 1px 1px white;
+     font-size: 2rem;
+     font-family: "Bree Serif", serif;
+   }
+ 
+   #about_us_2 {
+     display: flex;
+     flex-direction: column;
+     padding: 1px 100px;
+     
+     height: 600px;
+     justify-content: flex-start;
+     align-items: center;
+   }
+ 
+   #about_us_2 p {
+     color: black;
+     text-align: center;
+     font-size: 2rem;
+     font-family: "Bree Serif", serif;
+   }
+ 
+   /* Media Query*/
+ 
+   @media(max-width:1510px){
+ 
+     #navbar{
+       flex-direction: column;
+     }
+ 
+     #navbar ul li a{
+       font-size: 2rem;
+       padding: 0px 7px;
+       padding-bottom: 8px;
+     }
+ 
+     #about_us h1{
+       font-size: 5rem;
+     }
+ 
+     #about_us p{
+       font-size: 2rem;  
+       
+     }
+     
+     #about_us_2 p{
+       font-size: 1.5rem;
+     }
+ 
+   }
+ 
+   @media(max-width:900px) {
+ 
+     #navbar ul li a{
+       font-size: 1rem;
+     }
+ 
+     #about_us h1{
+       font-size: 3rem;
+     }
+ 
+     #about_us p{
+       font-size: 1.5rem;
+     }
+ 
+     #about_us_2{
+       padding: 0px 10px;
+       height: 600px;
+     }
+ 
+     #about_us_2 p{
+       font-size: 1.25rem;
+       text-align: justify;
+       background-color: wheat;
+       padding: 10px;
+       border-radius: 10px;
+     }
+ 
+   }
+   @media(max-width:355px) {
+     #navbar ul li a{
+       margin: 0px;
+       font-size: 0.7rem;
+     }
+     #about_us::before{
+       height: 70%;
+     }
+     #about_us p{
+       font-size: 1rem;
+     }
+     #about_us_2{
+       padding:0px;
+     }
+ 
+   }
